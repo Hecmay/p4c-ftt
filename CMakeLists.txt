@@ -4,12 +4,14 @@ set (FTT_ARCH_SRCS
   fixed_three_tables.cpp
   ftt_midend/ftt_midend.cpp
   ftt_midend/ftt_table_id.cpp
+  ftt_backend/ftt_codegen.cpp
   )
 
-set (FTT_ATCH_HDRS
+set (FTT_ARCH_HDRS
   fixed_three_tables.h
   ftt_midend/ftt_midend.h
   ftt_midend/ftt_table_id.h
+  ftt_backend/ftt_codegen.h
   )
 
 add_cpplint_files (${CMAKE_CURRENT_SOURCE_DIR} "${FTT_ARCH_SRCS};${FTT_ARCH_HDRS}")
